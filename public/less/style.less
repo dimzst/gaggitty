@@ -1,0 +1,28 @@
+@base-padding: 50px;
+@font-size: 14px;
+@font-family: "Lucida Grande";
+@base-color: #00B7FF;
+@base-position: 50%;
+
+.font (@size, @family) {
+	font: @size @family, Helvetica, Arial, sans-serif;
+}
+
+body {
+  padding: @base-padding;
+  .font(@font-size, @font-family);
+}
+
+a {
+  color: @base-color;
+}
+
+.center {
+	position: absolute;
+	top: @base-position;
+	left: @base-position;
+	margin-right: -@base-position;
+	margin: 0;
+	transform: translate(-@base-position, -@base-position);
+	text-align: center;
+}
